@@ -1,0 +1,29 @@
+page-feedback {
+    .feedback-form {
+      padding: 20px;
+  
+      ion-item {
+        margin-bottom: 20px;
+      }
+  
+      ion-label {
+        color: #5D5C61;
+      }
+  
+      ion-input,
+      ion-textarea {
+        border: 1px solid #5D5C61;
+        border-radius: 5px;
+      }
+  
+      ion-button.submit-button {
+        --color: #fff;
+        margin: 20px;
+      }
+    }
+  }
+  .submit-button {
+    --background: rgb(197,153,86);
+--background: radial-gradient(circle, rgba(197,153,86,1) 0%, rgba(78,54,20,1) 100%);
+  }
+  

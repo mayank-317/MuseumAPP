@@ -1,0 +1,34 @@
+.hero-img {
+  height:420px;
+  width:360px;
+}
+page-home { 
+    .history-grid {
+      ion-row {
+        height: 20vh;
+        ion-col {
+          padding: 10px;
+        }
+      }
+    }
+  
+    .history-card {
+        border: 2px solid red;
+      background-color: #5D5C61;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      
+      ion-label {
+        font-weight: bold;
+      }
+    }
+  }
+  .history-grid ion-card {
+    background: rgb(197,153,86);
+    background: radial-gradient(circle, rgba(197,153,86,1) 0%, rgba(78,54,20,1) 100%);
+    color: black;
+    font-weight: bold;
+  }
+  
+  

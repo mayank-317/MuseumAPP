@@ -1,0 +1,94 @@
+// img{
+//     height: 320px;
+//     width:320px;
+// }
+// ion-card-header{
+//     text-transform: uppercase;
+//     font-weight:1200;
+// }
+
+// ion-header {
+//     ion-toolbar {
+//       --ion-color-base: #5D5C61; 
+//       --ion-color-primary: #379683; 
+//       --ion-color-secondary: #7395AE; 
+//       font-family: 'Arial', sans-serif; 
+//     }
+//   }
+  
+//   ion-content {
+//     --ion-background-color: black; 
+//     font-family: 'Arial', sans-serif; 
+//   }
+  
+//   ion-card {
+//     background: rgb(197,153,86);
+//     background: radial-gradient(circle, rgba(197,153,86,1) 0%, rgba(78,54,20,1) 100%);
+//     margin: 10px; 
+//     border-radius: 8px; 
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+//   }
+  
+//   ion-card-header {
+//     color: black; 
+//     font-weight: bold;
+//   }
+  
+//   ion-card-content {
+//     color: black;
+     
+//     padding: 16px;
+//   }
+  
+//   .profile-img {
+//     width: 100%; 
+//     border-radius: 8px; 
+//     font-family: 'Arial', sans-serif;
+//   }
+  
+@mixin card-styles {
+  background: $ion-color-primary;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+$ion-color-primary: radial-gradient(circle, rgba(197, 153, 86, 1) 0%, rgba(78, 54, 20, 1) 100%);;
+$ion-color-secondary: black;
+$font-family: 'Arial', sans-serif;
+
+
+ion-header {
+  ion-toolbar {
+    --ion-color-base: $ion-color-base;
+    --ion-color-primary: $ion-color-primary;
+    --ion-color-secondary: $ion-color-secondary;
+    font-family: $font-family;
+  }
+}
+
+ion-content {
+  --ion-background-color: $ion-color-secondary;
+  font-family: $font-family;
+}
+
+ion-card {
+  @include card-styles;
+}
+
+ion-card-header {
+  color:$ion-color-secondary;
+  font-weight: bold;
+  font-size: large;
+}
+
+ion-card-content {
+  color:$ion-color-secondary;
+  padding: 16px;
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 8px;
+  font-family: $font-family;
+}

@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="hero-img">
+    <img src="assets/hero-img.png" alt="Home Image"/>
+  </div>
+  <ion-grid class="history-grid">
+    <ion-row size="20">
+      <ion-col size="6">
+        <ion-card routerLink="/card1" class="history-card">
+          <ion-card-content>
+            <ion-label>Ancient History</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card routerLink="/card2" class="history-card">
+          <ion-card-content>
+            <ion-label>Medieval History</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row size="15">
+      <ion-col size="6">
+        <ion-card routerLink="/card3" class="history-card">
+          <ion-card-content>
+            <ion-label>Modern History</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card routerLink="/card4" class="history-card">
+          <ion-card-content>
+            <ion-label>Arts History</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
